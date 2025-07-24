@@ -23,6 +23,14 @@
     border: none;
 }
 
+.btn-secondary{
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px 18px;
+}
+
 /* banner styles */
 .banner{
     background: rgb(22, 22, 22);
@@ -52,4 +60,56 @@
 
  .banner img{
     display: block;
+}
+
+/* upcoming matches */
+.upcoming-matches{
+    display: flex;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.upcoming-matches-left{
+    background:black;
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.upcoming-matches-left .btn:nth-child(1), .btn:nth-child(2){
+    background-color: white;
+    color: black;
+}
+
+.upcoming-matches-right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.card{
+    border: 1.14px solid rgb(232, 232, 232);
+    border-radius: 12px;
+}
+
+.card img{
+    height: 180px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 22px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-bottom{
+    display: flex;
+    gap: 20px;
+    color: #161616cc;
 }
